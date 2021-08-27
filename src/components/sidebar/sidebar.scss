@@ -1,0 +1,133 @@
+$SidebarMainColor: #dadada;
+$SidebarSubColor: #1e3163;
+$fontColor: #060d2a;
+
+.sidebar {
+  position: sticky;
+  color: $fontColor;
+  top: 0;
+  background-color: $SidebarMainColor;
+  width: 220px;
+  height: 100vh;
+  // color: white;
+  display: flex;
+  justify-content: center;
+  .sidebar-container {
+    width: 80%;
+    .sidebar-top,
+    .sidebar-center,
+    .sidebar-bottom {
+      padding: 20px 0px;
+      border-bottom: 1px solid black;
+    }
+    .sidebar-bottom {
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .color-pallete {
+        width: 50px;
+        height: 50px;
+        margin-right: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 700px) {
+        flex-direction: column;
+        .color-pallete {
+          margin-bottom: 10px;
+        }
+      }
+      .light {
+        background-color: white;
+        border: 1px solid black;
+      }
+
+      .default {
+        background-color: $SidebarMainColor;
+        border: 1px solid black;
+      }
+    }
+    .sidebar-top {
+      padding: 20px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 40px;
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        border: 5px solid #474747;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 700px) {
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+    .sidebar-center {
+      ul {
+        padding: 0px;
+        list-style: none;
+        li {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          padding: 10px 5px;
+          margin-bottom: 10px;
+          .menu-icon {
+            font-size: 30px;
+            margin-right: 5px;
+          }
+          font-size: 20px;
+          border-radius: 5px;
+          &.active {
+            background-color: #c8c8c8;
+          }
+          &:hover {
+            background-color: #c8c8c8;
+          }
+          @media screen and (max-width: 700px) {
+            span {
+              display: none;
+            }
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  &.light {
+    background-color: white;
+    color: rgb(82, 76, 76);
+    border-right: 1px solid #ebeaea;
+    li {
+      // color: ;
+      //   background-color: grey;
+      //   &.active {
+      //     background-color: grey;
+      //   }
+      //   &:hover {
+      //     background-color: grey;
+      //   }
+      &.active {
+        background-color: #ccd5ae !important;
+      }
+      &:hover {
+        background: #ccd5ae !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100px;
+  }
+}

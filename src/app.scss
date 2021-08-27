@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  .content {
+    width: calc(100% - 220px);
+    background: #ebeaea;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    .content {
+      width: calc(100% - 100px);
+      // background-color: crimson;
+    }
+  }
+}
