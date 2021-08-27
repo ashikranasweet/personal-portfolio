@@ -24,6 +24,23 @@
         font-weight: bold;
       }
     }
+    @media screen and (max-width: 700px) {
+      .title {
+        font-size: 15px;
+      }
+      .name {
+        font-size: 22px;
+      }
+      .skill {
+        font-size: 15px;
+        span {
+          display: block;
+          //   margin-top: 15px;
+          //   background-color: red;
+          height: 50px;
+        }
+      }
+    }
   }
   .right {
     flex: 4;
@@ -34,20 +51,6 @@
     img {
       width: 60%;
       height: 60%;
-    }
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .starter {
-    .left {
-      .name {
-        font-size: 25px;
-      }
-      .skill {
-        font-size: 12px;
-        // background-color: red;
-      }
     }
   }
 }

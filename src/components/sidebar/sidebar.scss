@@ -96,6 +96,10 @@ $fontColor: #060d2a;
             span {
               display: none;
             }
+            .menu-icon {
+              font-size: 18px;
+              margin: 0px;
+            }
             align-items: center;
             justify-content: center;
           }
@@ -128,6 +132,6 @@ $fontColor: #060d2a;
 
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100px;
+    width: 80px;
   }
 }

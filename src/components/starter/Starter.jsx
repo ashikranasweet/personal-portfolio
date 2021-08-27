@@ -8,7 +8,7 @@ const Starter = () => {
 
   useEffect(() => {
     init(ref.current, {
-      showCursor: true,
+      showCursor: false,
       backDelay: 1500,
       strings: ['Programmer', 'Designer', 'Developer'],
     });
@@ -21,7 +21,7 @@ const Starter = () => {
           <div className="name">Ashik Rana</div>
 
           <div className="skill">
-            Professional <span ref={ref}></span>
+            Passionate <span ref={ref}></span>
           </div>
         </div>
       </div>

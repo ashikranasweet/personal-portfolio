@@ -6,7 +6,7 @@ const sections = [
     title: 'Navbar',
     designner: 'Ashik Rana',
     date: '24/4/2021',
-    link: 'http://netlify.com/one/navbar',
+    link: 'https://net-practise.netlify.app/part/1',
     img: 'https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
   },
   {
@@ -49,7 +49,9 @@ const Sections = () => {
         {sections.map((dt) => (
           <div className="single-section">
             <div className="img-data">
-              <img src={dt.img} alt="" />
+              <a href={dt.link} target="_blank" rel="noreferrer">
+                <img src={dt.img} alt="" />
+              </a>
             </div>
             <div className="text-data">
               <div className="title">
