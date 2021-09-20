@@ -1,0 +1,25 @@
+.projectList {
+  .cards {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    //   background-color: tomato;
+
+    @media screen and (max-width: 1007px) {
+      .card {
+        width: 47.5%;
+        .card-content {
+          .card-title {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 640px) {
+      .card {
+        width: 90%;
+        flex-grow: 1;
+      }
+    }
+  }
+}

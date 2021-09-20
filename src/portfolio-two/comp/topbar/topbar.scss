@@ -1,0 +1,37 @@
+.topbar {
+  height: 70px;
+  padding: 0px 30px;
+  //   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .left {
+    .brand {
+      font-size: 40px;
+      color: teal;
+    }
+  }
+  .middle {
+    ul {
+      list-style-type: none;
+      display: flex;
+      //   justify-content: space-between;
+      li {
+        font-size: 20px;
+        margin-right: 20px;
+        cursor: pointer;
+        &:hover {
+          color: teal;
+        }
+      }
+    }
+  }
+
+  .right {
+    .icon {
+      font-size: 30px;
+      color: #22577a;
+      margin-right: 5px;
+    }
+  }
+}
